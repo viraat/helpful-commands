@@ -18,3 +18,9 @@ git remote update origin --prune
 git push --delete <remote_name> <branch_name>
 git branch -d <branch_name>
 ```
+
+- [Remove all branches locally that do not exist on the remote](https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote)
+
+```bash
+git remote prune origin
+```
