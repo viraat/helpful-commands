@@ -8,6 +8,12 @@ git branch -a
 
 - [To update the local list of remote branches:](https://stackoverflow.com/questions/36358265/when-does-git-refresh-the-list-of-remote-branches)
 
+[Remove all branches locally that do not exist on the remote](https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote)
+
+```bash
+git remote prune origin
+```
+
 ```bash
 git remote update origin --prune
 ```
@@ -19,8 +25,3 @@ git push --delete <remote_name> <branch_name>
 git branch -d <branch_name>
 ```
 
-- [Remove all branches locally that do not exist on the remote](https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote)
-
-```bash
-git remote prune origin
-```
